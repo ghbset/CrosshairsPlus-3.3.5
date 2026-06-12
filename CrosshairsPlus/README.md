@@ -12,10 +12,12 @@
 CrosshairsPlus draws a glowing animated crosshair directly on your target's nameplate the moment you select them. The crosshair fades in when you gain a target and fades out when you lose one — keeping your screen clean while making sure you always know exactly what you're hitting.
 
 - Crosshair circle snaps to the nameplate of your current target
+- Pick from **19 crosshair styles** — the original glowing rings plus 13 imported crosshair graphics
+- The central crosshair can **spin** continuously (independent speed/direction from the arrow ring)
 - Four directional crosshair lines extend from the center
 - Rotating arrow ring spins around the target
 - All elements fade smoothly in and out
-- Colors automatically match your target (class color or reaction color)
+- Colors automatically match your target — **class color**, **reaction color**, or a live **health gradient** (green → yellow → red)
 - Fully customizable via `/chp`
 
 ---
@@ -54,8 +56,9 @@ CrosshairsPlus draws a glowing animated crosshair directly on your target's name
 
 Open with **`/chp`**. The panel can be dragged anywhere on screen.
 
-### Circle Style
-Cycles through 7 different crosshair circle designs.
+### Crosshair Style
+Cycles through 19 different designs — the 6 original glowing circle rings followed by
+13 crosshair graphics (`Cross Default`, `Cross 1`–`Cross 9`, `Cross A`–`Cross C`).
 Use `<` and `>` to switch between them live.
 
 ### Scale
@@ -79,12 +82,28 @@ Controls how visible the circle and arrows are. Lower values are more subtle; `1
 | **Clockwise** | Changes rotation direction to clockwise (default is counter-clockwise) |
 | **Rotation Speed** | How many seconds one full rotation takes — `1s` = very fast, `30s` = very slow |
 
+### Spin Crosshair
+
+| Setting | Description |
+|---|---|
+| **Spin crosshair** | Continuously rotates the central crosshair texture (separate from the arrow ring) |
+| **Clockwise** | Spin direction (default is counter-clockwise) |
+| **Spin Speed** | Seconds per full rotation — `1s` = very fast, `30s` = very slow |
+
+### Glide
+
+| Setting | Description |
+|---|---|
+| **Slide between targets** | When you switch targets, the crosshair smoothly slides from your old target to the new one instead of snapping instantly. It tracks the new nameplate even while it moves, then locks on once it arrives. |
+| **Glide Speed** | How long the slide takes, in seconds — `0.1s` = near-instant, `1.0s` = a slow drift |
+
 ### Color Mode
 
 | Mode | How it works |
 |---|---|
 | **Class Color** | When targeting a **player**, the crosshair takes that player's class color (e.g. Paladin = pink, Mage = cyan, Warrior = tan). On NPCs it automatically falls back to reaction color. |
 | **Reaction Color** | Always uses WoW's standard hostile/neutral/friendly colors — **red** for enemies, **yellow** for neutral, **green** for friendly. Works the same on both players and NPCs. |
+| **Health Color** | Tints the crosshair by the target's current health — **green** at full HP, fading through **yellow** at 50%, to **red** near death. Updates live as the target takes damage or heals. |
 
 ---
 

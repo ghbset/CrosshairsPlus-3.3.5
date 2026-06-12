@@ -1,6 +1,6 @@
 ## Interface: 30300
 ## Title: |cff00ccffCrosshairs|cff0077ffPlus|r
-## Author: xLT69x
+## Author: xLT69x // Bset
 ## Version: 1.0.0
 ## Notes: |cff00ccffAnimated target crosshair with customizable styles|r  — Made by |cffffd700xLT69x|r
 ## SavedVariables: CrosshairsPlusDB
